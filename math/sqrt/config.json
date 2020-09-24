@@ -1,0 +1,15 @@
+{
+  "dockerImageBuilder": "cimg/node:14.0",
+  "inputs": [
+    {
+      "cache": {
+        "active": true,
+        "newLabel": "Type new value. ",
+        "qty": 6
+      },
+      "label": "First value : ",
+      "name": "first_value",
+      "type": "text"
+    }
+  ]
+}

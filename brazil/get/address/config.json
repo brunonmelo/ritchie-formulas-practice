@@ -1,0 +1,15 @@
+{
+  "dockerImageBuilder": "cimg/node:14.0",
+  "inputs": [
+    {
+      "cache": {
+        "active": true,
+        "newLabel": "Type new CEP. ",
+        "qty": 6
+      },
+      "label": "CEP : ",
+      "name": "cep_value",
+      "type": "text"
+    }
+  ]
+}

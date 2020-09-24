@@ -1,0 +1,15 @@
+{
+  "dockerImageBuilder": "cimg/node:14.0",
+  "inputs": [
+    {
+      "label": "First value : ",
+      "name": "first_value",
+      "type": "text"
+    },
+    {
+      "label": "Second value : ",
+      "name": "second_value",
+      "type": "text"
+    }
+  ]
+}

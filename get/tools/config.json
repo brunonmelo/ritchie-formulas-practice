@@ -1,0 +1,77 @@
+{
+  "dockerImageBuilder": "cimg/node:14.0",
+  "inputs": [
+    {
+      "items": [
+        "BACK-END",
+        "FRONT-END",
+        "OPERATION",
+        "QA"
+      ],
+      "label": "Pick your profile : ",
+      "name": "profile_value",
+      "type": "text"
+    },
+    {
+      "condition": {
+        "variable":"profile_value",
+        "operator":"==",
+        "value":"BACK-END"
+      },
+      "items": [
+        "back-end 1",
+        "back-end 2",
+        "back-end 3"
+      ],
+      "label": "Pick your back-end profile tools : ",
+      "name": "PROFILE_TOOLS",
+      "type": "text"
+    },
+    {
+      "condition": {
+        "variable":"profile_value",
+        "operator":"==",
+        "value":"FRONT-END"
+      },
+      "items": [
+        "front-end 1",
+        "front-end 2",
+        "front-end 3"
+      ],
+      "label": "Pick your front-end profile tools : ",
+      "name": "PROFILE_TOOLS",
+      "type": "text"
+    },
+    {
+      "condition": {
+        "variable":"profile_value",
+        "operator":"==",
+        "value":"OPERATION"
+      },
+      "items": [
+        "operation 1",
+        "operation 2",
+        "operation 3"
+      ],
+      "label": "Pick your operation profile tools : ",
+      "name": "PROFILE_TOOLS",
+      "type": "text"
+    },
+    
+    {
+      "condition": {
+        "variable":"profile_value",
+        "operator":"==",
+        "value":"QA"
+      },
+      "items": [
+        "QA 1",
+        "QA 2",
+        "QA 3"
+      ],
+      "label": "Pick your QA profile tools : ",
+      "name": "PROFILE_TOOLS",
+      "type": "text"
+    }
+  ]
+}

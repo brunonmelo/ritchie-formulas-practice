@@ -1,0 +1,26 @@
+{
+  "dockerImageBuilder": "cimg/node:14.0",
+  "inputs": [
+    {
+      "items": [
+        "sum",
+        "minus",
+        "square root",
+        "multiplication"
+      ],
+      "label": "Select operation : ",
+      "name": "operation_value",
+      "type": "text"
+    },
+    {
+      "label": "First value : ",
+      "name": "first_value",
+      "type": "text"
+    },
+    {
+      "label": "Second value : ",
+      "name": "second_value",
+      "type": "text"
+    }
+  ]
+}
